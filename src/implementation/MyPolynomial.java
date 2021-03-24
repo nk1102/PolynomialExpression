@@ -26,6 +26,15 @@ public class MyPolynomial {
         size++;
 
     }
-    
+    public void traverse(){
+        Node temp = head;
+        System.out.println("expression");
+        while (temp != null){
+            System.out.print("[" + temp.getCoefficient() + ","+ temp.getPower()+"] , " );
+            temp = temp.getNext();
+        }
+        System.out.println();
+    }
+
 }
 
