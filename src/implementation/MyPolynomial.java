@@ -12,5 +12,20 @@ public class MyPolynomial {
     public boolean isempty() {
         return head == null;
     }
+    public void addLast(int coefficient,int power){
+        Node node = new Node(coefficient,power);
+        if (isempty()){
+            head = node;
+            tail = node;
+        }
+        else {
+            tail.setNext(node);
+            tail = node;
+
+        }
+        size++;
+
+    }
+    
 }
 
