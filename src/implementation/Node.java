@@ -5,11 +5,12 @@ public class Node {
     private int power;
     private Node next;
 
-    public Node(int coefficient, int power, Node next) {
+    public Node(int coefficient, int power) {
         this.coefficient = coefficient;
         this.power = power;
-        this.next = next;
+        this.next = null;
     }
+
 
     public int getCoefficient() {
         return coefficient;
