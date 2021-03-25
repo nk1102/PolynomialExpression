@@ -1,6 +1,6 @@
 package implementation;
 
-public class MyPolynomial {
+public class polynomial {
     private Node head;
     private Node tail;
     private int size;
